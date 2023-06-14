@@ -1,0 +1,53 @@
+{
+    "name": "api-template",
+    "version": "1.0.0",
+    "main": "cluster.js",
+    "author": "Matthew McMorries",
+    "license": "unlicensed",
+    "private": true,
+    "scripts": {
+        "start": "./node_modules/.bin/pm2 start index.js --name api-template",
+        "stop": "./node_modules/.bin/pm2 stop api-template",
+        "restart": "./node_modules/.bin/pm2 restart api-template",
+        "delete": "./node_modules/.bin/pm2 delete api-template",
+        "logs": "./node_modules/.bin/pm2 logs api-template",
+        "status": "./node_modules/.bin/pm2 status api-template",
+        "monit": "./node_modules/.bin/pm2 monit"
+    },
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "expo-server-sdk": "^3.7.0",
+        "express": "^4.18.2",
+        "express-async-handler": "^1.2.0",
+        "express-fileupload": "^1.4.0",
+        "express-validator": "^7.0.1",
+        "helmet": "^6.1.5",
+        "jsonwebtoken": "^9.0.0",
+        "mongodb-client-encryption": "^2.7.1",
+        "mongoose": "^7.1.0",
+        "mongoose-encryption": "^2.1.2",
+        "morgan": "^1.10.0",
+        "pm2": "^5.3.0",
+        "readdir": "^1.0.2",
+        "redis": "^4.6.6",
+        "twilio": "^4.10.0",
+        "uuid": "^9.0.0",
+        "websocket": "^1.0.34",
+        "ws": "^8.13.0"
+    },
+    "devDependencies": {
+        "jest": "^29.5.0",
+        "puppeteer": "^19.11.1"
+    },
+    "prettier": {
+        "singleQuote": false,
+        "tabWidth": 4,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "bracketSameLine": false,
+        "semi": true,
+        "printWidth": 120
+    }
+}
